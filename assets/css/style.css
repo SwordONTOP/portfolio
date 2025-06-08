@@ -1127,6 +1127,66 @@ main {
   background: #333;
 }
 
+.github-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.github-link a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #ffd700;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.github-link a:hover {
+  color: #ffd700;
+  opacity: 0.8;
+}
+
+.github-link ion-icon {
+  color: #ffd700;
+  font-size: 1.2rem;
+}
+
+.disclaimer {
+  margin: 1rem 0;
+  padding: 1rem;
+  background: var(--eerie-black-2);
+  border-left: 4px solid #ffd700;
+  color: var(--light-gray);
+  font-size: 0.9rem;
+}
+
+.disclaimer strong {
+  color: #ffd700;
+}
+
+.success-message {
+  background: #2c2c2c;
+  color: #ffd700;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  margin: 1rem 0;
+  animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .project-details-btn {
   background: #000;
   color: #ffd700;
