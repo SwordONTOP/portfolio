@@ -385,48 +385,185 @@
 
 
       <!--
-        - #PROJECTS
+        - #PROJETS
       -->
 
       <article class="projets" data-page="projets">
-
         <header>
-          <h2 class="h2 article-title">Projets</h2>
+          <h2 class="h2 article-title">Mes Projets</h2>
         </header>
+        
+        <div class="projects-container">
+          <!-- Robot Suiveur de Ligne -->
+          <div class="project-card" data-project="robot-suiveur">
+            <div class="project-header">
+              <h3 class="h3 project-title">Robot Suiveur de Ligne</h3>
+              <p class="project-description">Un robot autonome qui suit une ligne noire grâce à des capteurs infrarouges. Projet réalisé en équipe avec une interface de contrôle Python.</p>
+              <div class="project-tags">
+                <span>Arduino</span>
+                <span>Nocode</span>
+                <span>Python</span>
+                <span>Électronique</span>
+              </div>
+              <button class="project-details-btn">Voir les détails</button>
+            </div>
+            <div class="project-details" style="display: none;">
+              <section class="project-section">
+                <h4>Description</h4>
+                <p>Le robot suiveur de ligne est un projet qui combine les compétences en d'Assemblage et un peu d'electronique et en programmation. Il utilise un microcontrôleur Arduino et des capteurs infrarouges pour suivre une ligne noire sur un fond blanc. Le robot est controler par une application faite par mo groupe et moi .</p>
+              </section>
+              
+              <section class="project-section">
+                <h4>Compétences</h4>
+                <ul>
+                  <li>Programmation Arduino/C++</li>
+                  <li>Électronique embarquée</li>
+                  <li>Interface Arduino-Python</li>
+                  <li>Assemblage des pieces</li>
+                  <li>Contrôle desktop capteurs</li>
+                </ul>
+              </section>
+              
+              <section class="project-section">
+                <h4>Objectifs</h4>
+                <ul>
+                  <li>Créer un robot autonome capable de suivre une ligne</li>
+                  <li>Optimiser la détection de ligne avec des capteurs infrarouges</li>
+                </ul>
+              </section>
+              
+              <section class="project-section">
+                <h4>Techniques et Savoir-faire Acquis</h4>
+                <ul>
+                  <li>Maîtrise de l'interface Arduino-PC via Serial</li>
+                  <li>Programmation orientée événement pour la détection de ligne</li>
+                  <li>Calibration de capteurs infrarouges</li>
+                  <li>Optimisation de la vitesse et de la précision du robot</li>
+                  <li>Travail collaboratif et gestion de projet</li>
+                </ul>
+              </section>
+            </div>
+          </div>
 
-        <section class="projects-content">
-          <ul class="project-list">
-            <li class="project-item">
-              <h4 class="h4 project-item-title">Simulateur de Pendule Simple</h4>
-              <p class="project-item-text">
-                Créez une simulation interactive d'un pendule simple. Ajustez la longueur, la masse et la gravité pour observer comment ces facteurs affectent la période d'oscillation. Visualisez le mouvement et tracez la position en fonction du temps.
-              </p>
-              <p class="project-item-lang">
-                <strong>Langages :</strong> Python (avec Pygame/Tkinter et Matplotlib) ou JavaScript (avec HTML Canvas/p5.js).
-              </p>
-            </li>
-            <li class="project-item">
-              <h4 class="h4 project-item-title">Analyseur de Séquences ADN (Simplifié)</h4>
-              <p class="project-item-text">
-                Développez un outil qui prend une séquence d'ADN (chaîne de A, T, C, G) et effectue des analyses de base : comptage de la fréquence de chaque nucléotide, recherche de motifs spécifiques, transcription ADN en ARN.
-              </p>
-              <p class="project-item-lang">
-                <strong>Langages :</strong> Python.
-              </p>
-            </li>
-            <li class="project-item">
-              <h4 class="h4 project-item-title">Calculateur d'Orbites Planétaires</h4>
-              <p class="project-item-text">
-                Modélisez le mouvement de planètes autour d'une étoile en utilisant la loi de la gravitation de Newton. Permettez aux utilisateurs de définir les masses et les conditions initiales pour observer différentes orbites.
-              </p>
-              <p class="project-item-lang">
-                <strong>Langages :</strong> Python (avec Matplotlib ou Pygame pour la visualisation) ou JavaScript (avec p5.js).
-              </p>
-            </li>
-          </ul>
-        </section>
+          <!-- Application Smartphone de Contrôle Robot -->
+          <div class="project-card" data-project="app-controle">
+            <div class="project-header">
+              <h3 class="h3 project-title">Application Smartphone de Contrôle Robot (Bluetooth)</h3>
+              <p class="project-description">Application Android permettant de contrôler un robot via Bluetooth. Interface utilisateur intuitive avec contrôle de direction et vitesse.</p>
+              <div class="project-tags">
+                <span>Android</span>
+                <span>Java/Kotlin</span>
+                <span>Bluetooth</span>
+                <span>UI/UX</span>
+              </div>
+              <button class="project-details-btn">Voir les détails</button>
+            </div>
+            <div class="project-details" style="display: none;">
+              <section class="project-section">
+                <h4>Description</h4>
+                <p>L'application de contrôle Bluetooth est une application Android qui permet de contrôler un robot à distance via une connexion Bluetooth. L'interface utilisateur intuitive permet de piloter le robot avec des commandes de direction (avancer, reculer, tourner) et de vitesse.</p>
+              </section>
+              
+              <section class="project-section">
+                <h4>Compétences</h4>
+                <ul>
+                  <li>Développement Android</li>
+                  <li>Programmation Java/Kotlin</li>
+                  <li>Communication Bluetooth</li>
+                  <li>UI/UX Design</li>
+                  <li>Intégration de capteurs</li>
+                </ul>
+              </section>
+              
+              <section class="project-section">
+                <h4>Objectifs</h4>
+                <ul>
+                  <li>Développer une interface utilisateur intuitive</li>
+                  <li>Implémenter la communication Bluetooth stable</li>
+                  <li>Créer un système de contrôle précis</li>
+                  <li>Optimiser la consommation d'énergie</li>
+                </ul>
+              </section>
+              
+              <section class="project-section">
+                <h4>Techniques et Savoir-faire Acquis</h4>
+                <ul>
+                  <li>Développement d'applications Android</li>
+                  <li>Communication Bluetooth Low Energy</li>
+                  <li>Design d'interface utilisateur mobile</li>
+                  <li>Optimisation des performances</li>
+                  <li>Gestion des erreurs de connexion</li>
+                </ul>
+              </section>
+                  <li>Implémenter la communication Bluetooth stable</li>
+                  <li>Créer un système de contrôle précis</li>
+                  <li>Optimiser la consommation d'énergie</li>
+                </ul>
+              </section>
+              
+              <section class="project-section">
+                <h4>Techniques et Savoir-faire Acquis</h4>
+                <ul>
+                  <li>Développement d'applications Android</li>
+                  <li>Communication Bluetooth Low Energy</li>
+                  <li>Design d'interface utilisateur mobile</li>
+                  <li>Optimisation des performances</li>
+                  <li>Gestion des erreurs de connexion</li>
+                </ul>
+              </section>
+            </div>
+          </div>
 
+          <!-- Jeux Snake -->
+          <div class="project-card" data-project="snake-game">
+            <div class="project-header">
+              <h3 class="h3 project-title">Jeux Snake</h3>
+              <p class="project-description">Une version moderne du jeu Snake classique, implémentée avec HTML5 Canvas et JavaScript. Le serpent se déplace sur une grille et doit manger des pommes pour grandir tout en évitant les collisions avec les murs et lui-même.</p>
+              <div class="project-tags">
+                <span>Python</span>
+                <span>Animation</span>
+                <span>Jeux</span>
+              </div>
+              <button class="project-details-btn">Voir les détails</button>
+            </div>
+            <div class="project-details" style="display: none;">
+              <section class="project-section">
+                <h4>Description</h4>
+                <p>Une implémentation moderne du jeu Snake classique. Le jeu utilise des bibliothèques de jeu Python (Pygame) pour l'affichage graphique et la logique de jeu. Le serpent se déplace à travers une grille, mange des pommes pour grandir et doit éviter les collisions avec les murs et lui-même.</p>
+              </section>
+              
+              <section class="project-section">
+                <h4>Compétences</h4>
+                <ul>
+                  <li>Développement avec Python</li>
+                  <li>Animation avec Pygame</li>
+                  <li>Gestion des événements clavier</li>
+                  <li>Logique de collision</li>
+                </ul>
+              </section>
+              
+              <section class="project-section">
+                <h4>Objectifs</h4>
+                <ul>
+                  <li>Créer une version moderne du jeu Snake</li>
+                  <li>Implémenter un système de score</li>
+                  <li>Ajouter des effets visuels avec Pygame</li>
+                </ul>
+              </section>
+              
+              <section class="project-section">
+                <h4>Techniques et Savoir-faire Acquis</h4>
+                <ul>
+                  <li>Développement de jeux</li>
+                  <li>Animation</li>
+                  <li>Gestion des événements du jeu</li>
+                </ul>
+              </section>
+            </div>
+          </div>
+        </div>
       </article>
+
 
 
 
@@ -666,7 +803,9 @@
   <!--
     - custom js link
   -->
-  <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/script.js" defer></script>
+  <script src="./assets/js/projects.js" defer></script>
+</body>
 
   <!--
     - ionicon link

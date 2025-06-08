@@ -1073,9 +1073,133 @@ main {
   padding: 15px 0; /* Added to give some space around the project list */
 }
 
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 2rem 0;
+}
+
+.project-card {
+  background: var(--eerie-black-1);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-header {
+  padding: 2rem;
+  border-bottom: 1px solid var(--jet);
+}
+
+.project-title {
+  color: var(--white-1);
+  margin-bottom: 1rem;
+}
+
+.project-description {
+  color: var(--light-gray);
+  margin-bottom: 1.5rem;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.project-tags span {
+  background: #2c2c2c;
+  color: #ffd700;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  transition: transform 0.3s ease;
+}
+
+.project-tags span:hover {
+  transform: scale(1.05);
+  background: #333;
+}
+
+.project-details-btn {
+  background: #000;
+  color: #ffd700;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  border: 2px solid #ffd700;
+}
+
+.project-details-btn:hover {
+  background: #1a1a1a;
+  color: #ffd700;
+  transform: translateY(-2px);
+}
+
+.project-details {
+  background: var(--jet);
+  padding: 2rem;
+}
+
+.project-section {
+  margin-bottom: 2rem;
+  color: var(--light-gray);
+}
+
+.project-section h4 {
+  color: var(--white-1);
+  margin-bottom: 1rem;
+}
+
+.project-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.project-section ul li {
+  margin-bottom: 0.5rem;
+  padding-left: 1rem;
+  position: relative;
+}
+
+.project-section ul li::before {
+  content: "•";
+  color: var(--orange-yellow-crayola);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.project-card:first-child {
+  width: 100%;
+  margin-bottom: 40px;
+  background: var(--jet);
+  box-shadow: var(--shadow-3);
+}
+
+.project-card:first-child .project-header {
+  padding: 2.5rem;
+}
+
+.project-card:first-child .project-title {
+  font-size: 1.5rem;
+  margin-bottom: 1.2rem;
+}
+
+.project-card:first-child .project-description {
+  font-size: 1.1rem;
+  margin-bottom: 1.8rem;
+}
+
 .project-list {
-  display: grid;
-  grid-template-columns: 1fr; /* Default to single column */
+  display: flex;
+  flex-direction: column;
   gap: 30px;
   list-style: none;
   padding: 0;
@@ -1084,13 +1208,18 @@ main {
 }
 
 .project-item {
-  background: var(--eerie-black-2);
+  background: var(--eerie-black-1);
   padding: 25px;
-  border-radius: var(--radius-14);
-  box-shadow: var(--shadow-2);
-  border: 1px solid var(--jet);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  /* display: none; removed */
+  border-radius: 8px;
+  transition: var(--transition-1);
+}
+
+.project-item:first-child {
+  width: 100%;
+  margin-bottom: 40px;
+  background: var(--jet);
+  padding: 35px;
+  box-shadow: var(--shadow-3);
 }
 
 .project-item:hover {
